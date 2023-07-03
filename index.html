@@ -40,14 +40,15 @@
     </div>
 
     <script>
-
         const input = document.getElementById("token-question");
+        const element = <p>{input}</p>;
         const log = document.getElementById("token-answer");
+        const elementLog = <p>{elementLog}</p>;
 
-        input.addEventListener("input", updateValue);
+        element.addEventListener("input", updateValue);
 
         function updateValue(e) {
-            log.innerHTML = e.target.value;
+            elementLog.innerHTML = e.target.value;
         }
 
     </script>
